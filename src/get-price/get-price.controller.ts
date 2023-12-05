@@ -9,7 +9,7 @@ export class GetPriceController {
         try {
             return this.priceService.getPrice();
         } catch {
-            return { error: 'Failed to fetch price' };
+            return { error: 'Failed to fetch scraped price' };
         }
         
     }
