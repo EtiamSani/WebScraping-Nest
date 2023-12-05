@@ -21,7 +21,7 @@ export class GetPriceService {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'
             }
         }
-
+        console.log(options.auth.username)
         // il y a un lien directement de l'API https://query1.finance.yahoo.com/v7/finance/options/MC.PA A tester quand les marché sont ouvert
         try{
             const response = await axios.get('https://fr.finance.yahoo.com/quote/BTC-EUR', options)
